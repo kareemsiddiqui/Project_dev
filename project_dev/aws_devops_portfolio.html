@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kareem | AWS DevOps Engineer</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.6}
+header{background:#020617;padding:20px 8%;position:sticky;top:0;z-index:1000;border-bottom:1px solid #1e293b}
+nav{display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:24px;font-weight:bold;color:#38bdf8}
+nav ul{display:flex;list-style:none;gap:25px}
+nav a{color:#e2e8f0;text-decoration:none}
+nav a:hover{color:#38bdf8}
+section{padding:80px 8%}
+.hero{min-height:90vh;display:flex;align-items:center}
+.hero h1{font-size:52px;margin-bottom:15px}
+.hero h1 span{color:#38bdf8}
+.hero h2{color:#94a3b8;margin-bottom:20px}
+.hero p{max-width:650px;color:#cbd5e1;margin-bottom:30px}
+.btn{display:inline-block;background:#0284c7;color:white;padding:12px 22px;border-radius:6px;text-decoration:none;margin-right:10px}
+.btn:hover{background:#0369a1}
+.section-title{text-align:center;font-size:34px;margin-bottom:45px;color:#38bdf8}
+.about{background:#111827}
+.about p{max-width:850px;margin:auto;text-align:center;color:#cbd5e1}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
+.skill{background:#1e293b;padding:25px;text-align:center;border-radius:10px;border:1px solid #334155}
+.skill h3{color:#38bdf8;margin-bottom:10px}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.project{background:#1e293b;padding:25px;border-radius:10px;border:1px solid #334155}
+.project h3{color:#38bdf8;margin-bottom:12px}
+.project p{color:#cbd5e1;margin-bottom:15px}
+.tags span{display:inline-block;background:#0f172a;color:#7dd3fc;padding:5px 10px;margin:3px;border-radius:4px;font-size:13px}
+.contact{text-align:center}
+.contact p{margin:10px 0}
+footer{background:#020617;text-align:center;padding:25px;color:#94a3b8}
+@media(max-width:700px){nav ul{display:none}.hero h1{font-size:38px}}
+</style>
+</head>
+<body>
+<header><nav><div class="logo">Kareem.devops</div><ul>
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+</ul></nav></header>
+
+<section id="home" class="hero"><div>
+<h1>Hello, I'm <span>Kareem</span></h1>
+<h2>Aspiring AWS DevOps Engineer</h2>
+<p>I am currently building my skills in AWS, Linux, Git, Docker, Jenkins, Terraform and Kubernetes. This portfolio is part of my AWS DevOps learning journey.</p>
+<a href="#projects" class="btn">View Projects</a><a href="#contact" class="btn">Contact Me</a>
+</div></section>
+
+<section id="about" class="about"><h2 class="section-title">About Me</h2>
+<p>I am learning Cloud and DevOps technologies with a focus on AWS. My current learning path includes Linux administration, Bash scripting, Git/GitHub, AWS IAM, EC2, S3, VPC, Docker, Jenkins, Terraform and Kubernetes. My goal is to build real-world cloud infrastructure and CI/CD projects.</p>
+</section>
+
+<section id="skills"><h2 class="section-title">DevOps Skills</h2><div class="skills">
+<div class="skill"><h3>AWS</h3><p>IAM, EC2, S3, VPC, CloudWatch</p></div>
+<div class="skill"><h3>Linux</h3><p>Ubuntu, Shell Commands, Bash</p></div>
+<div class="skill"><h3>Git</h3><p>Git, GitHub, Branching</p></div>
+<div class="skill"><h3>Docker</h3><p>Images, Containers, Dockerfile</p></div>
+<div class="skill"><h3>Jenkins</h3><p>CI/CD Pipelines</p></div>
+<div class="skill"><h3>Terraform</h3><p>Infrastructure as Code</p></div>
+<div class="skill"><h3>Kubernetes</h3><p>Containers, Pods, Services</p></div>
+<div class="skill"><h3>Bash</h3><p>Shell Scripting & Automation</p></div>
+</div></section>
+
+<section id="projects" class="about"><h2 class="section-title">AWS DevOps Projects</h2><div class="projects">
+<div class="project"><h3>Project 1 — AWS IAM</h3><p>Created IAM users, groups, policies and roles. Practiced least-privilege access and role-based permissions.</p><div class="tags"><span>AWS IAM</span><span>Policies</span><span>Roles</span></div></div>
+<div class="project"><h3>Project 2 — EC2 Web Server</h3><p>Deployed a Linux web server on Amazon EC2, configured security groups and hosted a static HTML website.</p><div class="tags"><span>EC2</span><span>Linux</span><span>Apache</span></div></div>
+<div class="project"><h3>Project 3 — S3 Static Website</h3><p>Hosted a static portfolio website using Amazon S3 and practiced bucket permissions and static website hosting.</p><div class="tags"><span>S3</span><span>HTML</span><span>AWS</span></div></div>
+<div class="project"><h3>Project 4 — Docker Application</h3><p>Containerized a web application using Docker and created a Dockerfile for repeatable deployments.</p><div class="tags"><span>Docker</span><span>Linux</span><span>Containers</span></div></div>
+<div class="project"><h3>Project 5 — CI/CD Pipeline</h3><p>Built a CI/CD pipeline using GitHub and Jenkins to automatically build and deploy an application.</p><div class="tags"><span>Jenkins</span><span>GitHub</span><span>CI/CD</span></div></div>
+<div class="project"><h3>Project 6 — Terraform AWS Infrastructure</h3><p>Used Terraform to create and manage AWS resources as Infrastructure as Code.</p><div class="tags"><span>Terraform</span><span>AWS</span><span>IaC</span></div></div>
+</div></section>
+
+<section id="contact" class="contact"><h2 class="section-title">Contact</h2>
+<p>📧 Email: your-email@example.com</p><p>💼 LinkedIn: linkedin.com/in/yourprofile</p><p>🐙 GitHub: github.com/yourusername</p><br>
+<a href="mailto:your-email@example.com" class="btn">Send Email</a></section>
+
+<footer><p>© 2026 Kareem | AWS DevOps Learning Portfolio</p></footer>
+</body>
+</html>
