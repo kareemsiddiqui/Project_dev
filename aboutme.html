@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kareem Siddiqui – DevOps &amp; Cloud Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f3f5f4; --ink:#14232b; --muted:#53656d; --line:#cfd8d6;
+  --teal:#0b7a75; --amber:#c98a12; --surface:#ffffff;
+  --head:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"Source Serif 4",Georgia,serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#0f1a1f;--ink:#e8efee;--muted:#9bb0b0;--line:#27393f;--teal:#3cc0b6;--amber:#e8b44a;--surface:#16262c}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.125rem;line-height:1.65}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+a{color:var(--teal)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+
+header.hero{padding:96px 0 56px}
+h1{font-family:var(--head);font-weight:800;font-size:clamp(2.8rem,9vw,5.6rem);line-height:.98;letter-spacing:-.03em;margin:0 0 20px}
+.roles{font-family:var(--head);font-weight:500;font-size:clamp(1.15rem,3vw,1.6rem);color:var(--teal);margin:0 0 24px}
+.lede{max-width:60ch;color:var(--muted);margin:0}
+
+/* the one memorable thing: a pipeline */
+.pipeline{margin:56px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.stage{position:relative;padding:22px 18px 20px;border-top:4px solid var(--teal);background:var(--surface);border-left:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stage:nth-child(2){border-top-color:#2a9a8f}
+.stage:nth-child(3){border-top-color:var(--amber)}
+.stage:nth-child(4){border-top-color:var(--ink)}
+.stage h3{font-family:var(--head);font-size:1.15rem;margin:0 0 6px}
+.stage p{font-size:.95rem;line-height:1.5;margin:0;color:var(--muted)}
+.stage::after{content:"";position:absolute;right:-9px;top:14px;width:16px;height:16px;border-radius:50%;background:var(--paper);border:3px solid var(--teal);z-index:1}
+.stage:last-child::after{display:none}
+
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-family:var(--head);font-size:1.9rem;letter-spacing:-.01em;margin:0 0 24px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.profile h3{font-family:var(--head);font-size:1.3rem;margin:0 0 8px}
+.profile ul{margin:10px 0 0;padding-left:20px}
+.profile li{margin-bottom:6px}
+
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+.skills h3{font-family:var(--head);font-size:1.05rem;margin:0 0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{font-family:var(--head);font-weight:500;font-size:.9rem;padding:4px 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+
+.contact p{margin:0 0 6px}
+footer{padding:32px 0 56px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+
+@media(max-width:760px){
+  .pipeline{grid-template-columns:1fr 1fr}
+  .stage::after{display:none}
+  .cols{grid-template-columns:1fr;gap:32px}
+  header.hero{padding-top:64px}
+}
+@media(max-width:440px){.pipeline{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <h1>Kareem Siddiqui</h1>
+  <p class="roles">DevOps Engineer and Cloud Engineer</p>
+  <p class="lede">I build and run the platforms that let software teams ship quickly and safely. My work covers cloud infrastructure, automated delivery pipelines, and the monitoring that keeps systems healthy after release.</p>
+
+  <div class="pipeline" aria-label="How I work">
+    <div class="stage"><h3>Plan</h3><p>Design cloud architecture that is secure, scalable and cost-aware.</p></div>
+    <div class="stage"><h3>Build</h3><p>Automate infrastructure and application builds with code.</p></div>
+    <div class="stage"><h3>Deploy</h3><p>Release through CI/CD with repeatable, low-risk rollouts.</p></div>
+    <div class="stage"><h3>Operate</h3><p>Monitor, respond and keep improving reliability.</p></div>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About me</h2>
+  <p style="max-width:65ch">I’m Kareem, an engineer who enjoys turning manual, error-prone processes into automated, observable workflows. I work across development and operations so teams spend less time on deployments and more time on the product. I care about clear documentation, small safe changes, and systems that are easy for the next person to understand.</p>
+</section>
+
+<section id="profile" class="profile">
+  <h2>Professional profile</h2>
+  <div class="cols">
+    <div>
+      <h3>DevOps Engineer</h3>
+      <p>Connects development and operations through automation and shared ownership.</p>
+      <ul>
+        <li>Build and maintain CI/CD pipelines for faster, safer releases</li>
+        <li>Containerize applications and manage them on Kubernetes</li>
+        <li>Automate configuration and environment setup</li>
+        <li>Set up monitoring, logging and alerting for production systems</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Cloud Engineer</h3>
+      <p>Designs and manages the cloud infrastructure that applications run on.</p>
+      <ul>
+        <li>Provision infrastructure as code with repeatable templates</li>
+        <li>Design networks, identity and access with security in mind</li>
+        <li>Plan for high availability, backup and disaster recovery</li>
+        <li>Track and optimize cloud spend</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills and tools</h2>
+  <div class="skills">
+    <div><h3>Cloud</h3><ul class="chips"><li>AWS</li><li>Azure</li><li>Google Cloud</li><li>IAM</li><li>VPC networking</li></ul></div>
+    <div><h3>Infrastructure as code</h3><ul class="chips"><li>Terraform</li><li>Ansible</li><li>CloudFormation</li></ul></div>
+    <div><h3>Containers</h3><ul class="chips"><li>Docker</li><li>Kubernetes</li><li>Helm</li></ul></div>
+    <div><h3>CI/CD</h3><ul class="chips"><li>Jenkins</li><li>GitHub Actions</li><li>GitLab CI</li><li>Argo CD</li></ul></div>
+    <div><h3>Monitoring</h3><ul class="chips"><li>Prometheus</li><li>Grafana</li><li>ELK stack</li><li>CloudWatch</li></ul></div>
+    <div><h3>Scripting and OS</h3><ul class="chips"><li>Linux</li><li>Bash</li><li>Python</li><li>Git</li></ul></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Get in touch</h2>
+  <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile">linkedin.com/in/your-profile</a></p>
+  <p>GitHub: <a href="https://github.com/your-username">github.com/your-username</a></p>
+</section>
+
+<footer>© <span id="y">2026</span> Kareem Siddiqui</footer>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
